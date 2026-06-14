@@ -16,3 +16,5 @@ A serverless, event-driven language translation API that accepts text payloads, 
 ## Engineering Challenges & Debugging Realities
 * **The Problem (API Gateway Timeout Management):** During heavy payloads or sequential translation requests, downstream processing occasionally flirted with API Gateway's strict 29-second execution timeout limits.
     * *The Solution:* Optimized execution blocks within the Lambda handler, stripped out redundant payload parsing, and implemented rigorous exception handling to gracefully manage API gateway connection limits without dropping user state.
+## System Demo
+![Chatbot Conversation Demo](translator-bot-demo.png)
